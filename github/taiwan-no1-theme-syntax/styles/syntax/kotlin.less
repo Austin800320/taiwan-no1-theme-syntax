@@ -1,0 +1,29 @@
+.syntax--source.syntax--kotlin {
+  .syntax--storage {
+    &.syntax--modifier.syntax--import {
+      color: @syntax-color-class;
+    }
+
+    &.syntax--type {
+      color:@syntax-color-class;
+    }
+  }
+  .syntax--keyword.syntax--operator.syntax--instanceof {
+    color: @syntax-color-keyword;
+  }
+  .syntax--support.syntax--function{
+    color : @syntax-color-function;
+  }
+}
+
+.syntax--source.syntax--kotlin-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @syntax-color-variable;
+
+    & > .syntax--punctuation {
+      color: @syntax-color-value;
+    }
+  }
+  
+
+}

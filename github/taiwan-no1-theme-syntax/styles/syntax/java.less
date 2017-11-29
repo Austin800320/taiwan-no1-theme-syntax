@@ -1,0 +1,34 @@
+.syntax--source.syntax--java {
+  .syntax--storage {
+    &.syntax--modifier.syntax--import {
+      color: @syntax-color-class;
+    }
+
+    &.syntax--type {
+      color: @syntax-color-class;
+    }
+  }
+  .syntax--keyword.syntax--operator.syntax--instanceof {
+    color: @syntax-color-keyword;
+  }
+}
+
+.syntax--source.syntax--java-properties {
+  .syntax--meta.syntax--key-pair {
+    color: @syntax-text-color;
+
+    & > .syntax--punctuation {
+      color: @syntax-text-color;
+    }
+  }
+}
+
+.syntax--constant.syntax--language.syntax--java{
+  color: @syntax-color-invalid;
+}
+.syntax--punctuation{//[]{}..
+  color: @syntax-text-color;
+}
+.syntax--variable.syntax--language.syntax--wildcard.syntax--java{//*號
+  color: @syntax-color-invalid;
+}
