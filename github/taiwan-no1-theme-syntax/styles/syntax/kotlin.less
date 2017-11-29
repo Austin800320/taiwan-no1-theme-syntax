@@ -24,6 +24,15 @@
       color: @syntax-color-value;
     }
   }
-  
-
+}
+.syntax--entity.syntax--name.syntax--type.syntax--class{
+  color: @syntax-color-class;
+}
+.syntax--support.syntax--function.syntax--call{
+  .syntax--variable.syntax--parameter.syntax--function.syntax--call{
+    color: @syntax-color-variable;
+  }
+  .syntax--none.syntax--parameter.syntax--function.syntax--call{
+    color: @syntax-color-function;
+  }
 }

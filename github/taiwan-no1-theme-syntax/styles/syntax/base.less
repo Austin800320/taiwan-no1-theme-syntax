@@ -1,4 +1,3 @@
-@import "syntax-variables";
 // Syntax styles
 .syntax--comment {
   color: @syntax-color-comment;
@@ -25,7 +24,7 @@
   }
 
   &.syntax--other.syntax--unit {
-    color: @@syntax-color-number;
+    color: @syntax-color-number;
   }
 }
 
@@ -51,7 +50,7 @@
   color: @syntax-color-number;
 
   &.syntax--character.syntax--escape {
-    color: @color_7;
+    color: @my_color_7;
   }
 
   &.syntax--numeric {
@@ -59,11 +58,11 @@
   }
 
   &.syntax--other.syntax--color {
-    color: @color_7;
+    color: @my_color_7;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @color_7;
+    color: @my_color_7;
   }
 }
 
@@ -71,7 +70,7 @@
   color: @syntax-color-variable;
 
   &.syntax--interpolation {
-    color: @syntax-color;
+    color: @syntax-color-tag;
   }
 
   &.syntax--parameter.syntax--function {
@@ -98,7 +97,7 @@
 
 
   &.syntax--regexp {
-    color: @color_7;
+    color: @my_color_7;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @syntax-color-class;
@@ -112,11 +111,14 @@
 
 .syntax--punctuation {
   &.syntax--definition {
+    color: @syntax-color-keyword;
     &.syntax--comment {
       color: @nomar-gray;
     }
 
-    &.syntax--string,
+    &.syntax--string{
+      color: @syntax-color-string;
+    }
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
@@ -148,10 +150,10 @@
     color: @syntax-color-class;
   }
   &.syntax--type {
-    color: @color_7;
+    color: @my_color_7;
   }
   &.syntax--function  {
-    color: @color_7;
+    color: @my_color_7;
 
     &.syntax--any-method {
       color: @syntax-color-method;
@@ -177,7 +179,9 @@
   &.syntax--name.syntax--type{
     color: @syntax-color-class;
   }
-
+  &.syntax--name.syntax--package{
+    color: @syntax-color-class;
+  }
   &.syntax--other.syntax--inherited-class {
     color: @syntax-color-string;
   }
@@ -186,7 +190,7 @@
     color: @syntax-color-tag;
   }
   &.syntax--other.syntax--attribute-name {
-    color: @syntax-color-invalid;
+    color: @syntax-color-class;
 
     &.syntax--id {
       color: @syntax-color-function;
@@ -242,6 +246,7 @@
   color: @syntax-text-color;
 }
 
+
 .syntax--markup {
   &.syntax--bold {
     color: @syntax-color-invalid;
@@ -263,29 +268,26 @@
 
   &.syntax--heading {
     color: @syntax-color-variable;
+
     .syntax--punctuation.syntax--definition.syntax--heading {
       color: @syntax-color-function;
     }
+  }
+
+  &.syntax--link {
+    color: @syntax-color-function;
   }
 
   &.syntax--inserted {
     color: @syntax-color-variable;
   }
 
-  &.syntax--list {
-    color: @syntax-color-function;
-  }
-
   &.syntax--quote {
-    color: @syntax-color-number;
+    color: @syntax-color-variable;
   }
 
-  &.syntax--raw.
+  &.syntax--raw {
     color: @syntax-color-variable;
-
-    &.syntax--inline {
-      color: @syntax-color-variable;
-    }
   }
 }
 

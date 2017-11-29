@@ -1,10 +1,8 @@
-@import "syntax-variables";
-
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
   .line.cursor-line{
-    background:
+    background: @syntax-selection-color;
   }
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -20,7 +18,7 @@ atom-text-editor {
 
   .gutter {
     background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
+    color: @syntax-gutter;
 
     .line-number {
       &.cursor-line {
