@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/taiwan-no1-theme-syntax",
+  "repository": "https://github.com/Austin800320/taiwan-no1-theme-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
